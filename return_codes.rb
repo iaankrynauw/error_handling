@@ -6,7 +6,7 @@ end
 
 class ComplexProcess
 
-  def excecute
+  def execute
     if [true, false].sample
       return Errors::SUCCEDED
     end
@@ -18,7 +18,7 @@ class ComplexProcess
 end
 
 cp = ComplexProcess.new
-response = cp.excecute
+response = cp.execute
 
 case response
 when Errors::SUCCEDED
@@ -35,7 +35,7 @@ end
 
 # class ComplexProcess
 
-#   def excecute
+#   def execute
 #     if [true, false].sample
 #       return
 #     end
@@ -48,7 +48,7 @@ end
 
 # cp = ComplexProcess.new
 # begin
-#   response = cp.excecute
+#   response = cp.execute
 #   p "It worked!"
 # rescue Failed => e
 #   p "It failed"
